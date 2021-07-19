@@ -15,12 +15,15 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo.ico' }
     ]
   },
 
+  loading: { color: 'blue' },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/node_modules/bootstrap/dist/css/bootstrap.min.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
