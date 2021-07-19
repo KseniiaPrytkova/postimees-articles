@@ -13,12 +13,18 @@
 
 <script>
 export default {
-  async asyncData({$axios}) {
-    const articles = await $axios.$get('https://services.postimees.ee/rest/v1/sections/81/editorsChoice/articles?limit=5')
-    return {articles}
+  async fetch({store}) {
+    if (store.getters['articles/articles'].length === 0) {
+        await store.dispatch('articles/fetch')
+    }
   },
   data: () => ({
     pageTitle: 'Articles'
-  })
+  }),
+  computed: {
+    articles() {
+        return this.$store.getters['articles/articles']
+    }
+  }
 }
 </script>

@@ -72,3 +72,6 @@ connect this module with the application; in `nuxt.config.js`:
     '@nuxtjs/axios'
   ],
 ```
+
+## Vuex - we want to store an array of articles not just in a component, each time loading them when we visit the page, but store them in state (in store/ folder)
+if we have an array there already - we will not request data from server
