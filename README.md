@@ -1,5 +1,6 @@
 # postimees-articles
 
+## Set up project:
 - create Nuxt.js project (https://github.com/nuxt/create-nuxt-app):
 ```
 $ npm init nuxt-app@latest <my-project>
