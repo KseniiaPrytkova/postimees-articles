@@ -2,7 +2,7 @@
         <nav class="navbar navbar-expand navbar-dark navbar-custom-color py-0">
             <ul class="navbar-nav text-white ">
                 <li class="nav-item menu">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="menu">
                         <div class="menu-icon">
                             <div></div>
                             <div></div>
