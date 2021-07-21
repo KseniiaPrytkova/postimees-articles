@@ -76,6 +76,12 @@ connect this module with the application; in `nuxt.config.js`:
 ## Vuex - we want to store an array of articles not just in a component, each time loading them when we visit the page, but store them in state (in store/ folder)
 if we have an array there already - we will not request data from server
 
+## Font:
+https://www.linkedin.com/pulse/changing-default-fonts-vuetifyjs-nuxtjs-jarek-lipski/?trk=related_artice_Changing%20Default%20Fonts%20in%20Vuetify.js%20and%20Nuxt.js_article-card_title
+
+took similar to `tabac sans bold` from google fonts: 
+https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles
+
 ## TODO:
 - ~~add navbar;~~ [**DONE** ];
 - ~~add data loading from server(endpoint);~~ [**DONE** ];

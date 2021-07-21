@@ -19,3 +19,11 @@ export default {
     }
 }
 </script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arapey&family=Cinzel:wght@500&family=Cormorant+Garamond&family=Festive&family=Open+Sans:wght@300&display=swap');
+    html, body {
+        font-family: 'Arapey', serif;
+        /* font-size: 18px; */
+    }
+</style>

@@ -63,7 +63,7 @@
         opacity: 0.8;
         margin-left: 20px;
         margin-top: 20px;
-        font-size: 12px;
+        font-size: 18px;
     }
 
     img.center {
