@@ -82,3 +82,4 @@ if we have an array there already - we will not request data from server
 - fix navbar - move social media icons closer;
 - fix navbar - choose a font;
 - fix navbar - fix text size;
+- fix navbar - render repeating elements (social media icons) in for loop;
