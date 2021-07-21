@@ -75,3 +75,10 @@ connect this module with the application; in `nuxt.config.js`:
 
 ## Vuex - we want to store an array of articles not just in a component, each time loading them when we visit the page, but store them in state (in store/ folder)
 if we have an array there already - we will not request data from server
+
+## TODO:
+- ~~add navbar;~~ [**DONE** ];
+- ~~add data loading from server(endpoint);~~ [**DONE** ];
+- fix navbar - move social media icons closer;
+- fix navbar - choose a font;
+- fix navbar - fix text size;
