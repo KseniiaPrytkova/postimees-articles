@@ -65,61 +65,61 @@
 </template>
 
 <style scoped>
-@media (max-width: 576px) { 
-    .desktop-nav, p {
-        display: none;
+    @media (max-width: 576px) { 
+        .desktop-nav, p {
+            display: none;
+        }
     }
-}
 
-@media (min-width: 576px) and (max-width: 768px) { 
-    .mob-nav, p {
-        display: none;
+    @media (min-width: 576px) and (max-width: 768px) { 
+        .mob-nav, p {
+            display: none;
+        }
     }
-}
 
-@media (min-width: 768px) { 
-    .mob-nav {
-        display: none;
+    @media (min-width: 768px) { 
+        .mob-nav {
+            display: none;
+        }
     }
-}
 
-.navbar-nav {
-    align-items: center;       
-    justify-content: center;
-}
+    .navbar-nav {
+        align-items: center;       
+        justify-content: center;
+    }
 
-.navbar-custom-color {
-    background-color: #00a5e5;
-}
+    .navbar-custom-color {
+        background-color: #00a5e5;
+    }
 
-p, .login a {
-    font-size:  1.3vw;
-}
+    p, .login a {
+        font-size:  1.3vw;
+    }
 
-img {
-    width: 75%;
-}
+    img {
+        width: 75%;
+    }
 
-.menu-icon div {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-}
+    .menu-icon div {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+    }
 
-.menu {
-    background-color: #08b1f2;
-    padding: 5px;
-}
+    .menu {
+        background-color: #08b1f2;
+        padding: 5px;
+    }
 
-.power {
-    margin-left: -12px;
-    margin-right: 10px;
-}
+    .power {
+        margin-left: -10px;
+        margin-right: 10px;
+    }
 
-.login {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-left: 1.5px solid #4ebbeb;
-}
+    .login {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-left: 1.5px solid #4ebbeb;
+    }
 </style>
