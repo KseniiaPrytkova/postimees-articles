@@ -85,4 +85,4 @@ if we have an array there already - we will not request data from server
 - fix navbar - render repeating elements (social media icons) in for loop;
 - use @ in paths (nuxt root folder pointer);
 - jumbotron - style round button on click; add path;
-- jumbotron - place round button closer to bottom;
+- jumbotron - add date for mobile; format text for mobile;
