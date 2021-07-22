@@ -1,23 +1,27 @@
 <template>
   <section>
-    <h1>{{pageTitle}}</h1>
-
-    <ul>
-      <li v-for="article of articles" :key="article.id">
-          <a href="postimees.ee/" @click.prevent="openArticle(article)">{{article.headline}}</a>
-          <p>{{article.articleLead[0].html}}</p>
-          <!-- Article {{article}} -->
-      </li>
-    </ul>
+    <!-- <h1>{{pageTitle}}</h1> -->
+<!-- <div> -->
+      <Article
+        v-for="(article, index) of articles"
+        :key="index"
+        :headline="article.headline"
+      />
+<!-- </div> -->
   </section>
 </template>
 
 <script>
+import Article from '@/components/Article'
+
 export default {
   async fetch({store}) {
     if (store.getters['articles/articles'].length === 0) {
         await store.dispatch('articles/fetch')
     }
+  },
+  components: {
+      Article
   },
   data: () => ({
     pageTitle: 'Articles'
@@ -29,3 +33,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+section {
+  width: 100%;
+}
+</style>

@@ -129,3 +129,4 @@ in `layouts/default.vue`:
 - jumbotron - style round button on click; add path;
 - jumbotron - add date for mobile; format text for mobile;
 - find `tabac sans bold`
+- one code style - use bootstrap classes (`p-0` instead of `padding: 0`) 

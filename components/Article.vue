@@ -1,9 +1,9 @@
 <template>
-
+<!-- <div class="article"> -->
     <div class="card">
 
         <div class="card-header rounded-0">
-            Featured
+            {{headline}}
         </div>
 
         <div class="card-body">
@@ -23,14 +23,21 @@
             </div>
         </div>
     </div>
+<!-- </div> -->
 
 </template>
+
+<script>
+export default {
+  props: ['headline'],
+}
+</script>
 
 <style scoped>
     .card-header {
         background: url(https://images.unsplash.com/photo-1610850826190-8120a84d03af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80) no-repeat;
         background-size: cover;
-        min-width: 100%;
+        width: 100%;
         height: 60vh;
     }
     .card {

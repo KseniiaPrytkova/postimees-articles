@@ -2,13 +2,16 @@
     <div>
         <Navbar />
         <Jumbotron />
-        <Article />
+        <!-- <Article /> -->
 
-        <main>
+        <!-- <main>
             <div class="container">
                 <nuxt />
             </div>
-        </main>
+        </main> -->
+
+        <nuxt />
+
     </div>
 </template>
 
@@ -26,5 +29,10 @@ export default {
     html, body {
         font-family: 'Arapey', serif;
         /* font-size: 18px; */
+    }
+    main .container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
 </style>
