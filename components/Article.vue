@@ -1,28 +1,26 @@
 <template>
 
-    <div class="card bg-warning">
+    <div class="card">
 
-        <div class="card-header">
+        <div class="card-header rounded-0">
             Featured
         </div>
 
         <div class="card-body">
-            <div class="row ">
+            <div class="row">
 
-                <div class="col-7">
+                <div class="col-7 left-block">
                     <div class="card-block">
-                        <p>Wetgple text to build your own card.</p>
                         <p>Change around the content for awsomenes</p>
-                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
                     </div>
                 </div>
 
-                <div class="col-5">
-                    <img class="d-block w-100 h-100" src="https://picsum.photos/150?image=380" alt="">
+                <div class="col-5 right-block p-0">
+                    <!-- <div class="container right-block"></div> -->
+                    <div class="container" >fsf</div>
                 </div>
 
             </div>
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
         </div>
     </div>
 
@@ -38,6 +36,25 @@
     .card {
         width: 100%;
         height: 100vh;
+    }
+
+    .right-block div{
+        background: #00a5e5;
+        width: 100%;
+        height: 40vh;
+         
+    }
+
+    .left-block {
+        background: #181818;
+    }
+/* 
+    .card-block {
+        padding-left:0px;
+    } */
+
+    .card-body {
+        padding: 0px;
     }
 
    
