@@ -2,10 +2,7 @@
 <!-- <div class="article"> -->
     <div class="card">
 
-        <div class="card-header rounded-0" :style="{ backgroundImage: `url(${image})` }">
-            
-            <!-- <img :src=image alt=""> -->
-            <!-- instead of <div id="{{ val }}">, use <div :id="val">. -->
+        <div class="card-header rounded-0"  :style="{ backgroundImage: `url('${image}')` }">
             {{image}}
         </div>
 
@@ -44,6 +41,8 @@ export default {
       default: "ddd"
     }
   },
+
+  
 //    data() {
 //     return {
 //       member: {
