@@ -30,9 +30,5 @@ export default {
         font-family: 'Arapey', serif;
         /* font-size: 18px; */
     }
-    main .container{
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
+
 </style>

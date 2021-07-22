@@ -2,12 +2,15 @@
 <!-- <div class="article"> -->
     <div class="card">
 
-        <div class="card-header rounded-0">
-            {{headline}}
+        <div class="card-header rounded-0" :style="{ backgroundImage: `url(${image})` }">
+            
+            <!-- <img :src=image alt=""> -->
+            <!-- instead of <div id="{{ val }}">, use <div :id="val">. -->
+            {{image}}
         </div>
 
         <div class="card-body">
-            <div class="row">
+            <div class="row g-0">
 
                 <div class="col-7 left-block">
                     <div class="card-block">
@@ -29,17 +32,50 @@
 
 <script>
 export default {
-  props: ['headline'],
-}
+    //  props: ['headline', 'image'],
+  name: 'params',
+  props: {
+    headline: {
+      type: String,
+      default: "ddd"
+    },
+    image: {
+      type: String,
+      default: "ddd"
+    }
+  },
+//    data() {
+//     return {
+//       member: {
+//         name: "Jakz",
+//         coverImage: this.image,
+//       },
+//     };
+//   },
+//   computed: {
+//     imgStyle() {
+//       return {
+//     "background": red,
+//       };
+//     }
+//   }
+};
 </script>
 
 <style scoped>
     .card-header {
-        background: url(https://images.unsplash.com/photo-1610850826190-8120a84d03af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80) no-repeat;
+        /* background: url(https://images.unsplash.com/photo-1610850826190-8120a84d03af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80) no-repeat; */
+         /* background: url({{image}}) no-repeat; */
         background-size: cover;
         width: 100%;
         height: 60vh;
     }
+
+    /* .card-header img {
+         background-repeat: no-repeat;
+         width: 100%;
+    } */
+
     .card {
         width: 100%;
         height: 100vh;

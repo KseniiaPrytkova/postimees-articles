@@ -6,6 +6,7 @@
         v-for="(article, index) of articles"
         :key="index"
         :headline="article.headline"
+        :image="article.thumbnail.sources.landscape.large"
       />
 <!-- </div> -->
   </section>
@@ -34,8 +35,3 @@ export default {
 }
 </script>
 
-<style scoped>
-section {
-  width: 100%;
-}
-</style>
