@@ -129,4 +129,7 @@ in `layouts/default.vue`:
 - jumbotron - style round button on click; add path;
 - jumbotron - add date for mobile; format text for mobile;
 - find `tabac sans bold`
-- one code style - use bootstrap classes (`p-0` instead of `padding: 0`) 
+- one code style - use bootstrap classes (`p-0` instead of `padding: 0`)
+- understand WHY ON EARTH 1TH AND 2D IMAGES DUBLICATES
+- style elements like on layouts (padding, spacing etc)
+- delete `<p>` from string with article content

@@ -5,8 +5,9 @@
       <Article
         v-for="(article, index) of articles"
         :key="index"
-        :headline="article.headline"
+        :header="article.headline"
         :image="article.thumbnail.sources.landscape.large"
+        :content="article.articleLead[0].html"
       />
 <!-- </div> -->
   </section>
@@ -29,6 +30,7 @@ export default {
   }),
   computed: {
     articles() {
+      console.log(this.$store.getters['articles/articles'])
         return this.$store.getters['articles/articles']
     }
   }

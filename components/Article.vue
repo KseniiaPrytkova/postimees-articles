@@ -3,7 +3,7 @@
     <div class="card">
 
         <div class="card-header rounded-0"  :style="{ backgroundImage: `url('${image}')` }">
-            {{image}}
+            <h1>{{header}}</h1>
         </div>
 
         <div class="card-body">
@@ -11,7 +11,7 @@
 
                 <div class="col-7 left-block">
                     <div class="card-block">
-                        <p>Change around the content for awsomenes</p>
+                        <p>{{content}}</p>
                     </div>
                 </div>
 
@@ -32,32 +32,20 @@ export default {
     //  props: ['headline', 'image'],
   name: 'params',
   props: {
-    headline: {
+    header: {
       type: String,
-      default: "ddd"
+      default: "Here should be headline of article"
     },
     image: {
       type: String,
-      default: "ddd"
-    }
+      default: "https://images.unsplash.com/photo-1593745821762-a5d0d1ae878e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+    },
+    content: {
+      type: String,
+      default: "Here should be content of article"
+    },
+    
   },
-
-  
-//    data() {
-//     return {
-//       member: {
-//         name: "Jakz",
-//         coverImage: this.image,
-//       },
-//     };
-//   },
-//   computed: {
-//     imgStyle() {
-//       return {
-//     "background": red,
-//       };
-//     }
-//   }
 };
 </script>
 
@@ -65,9 +53,12 @@ export default {
     .card-header {
         /* background: url(https://images.unsplash.com/photo-1610850826190-8120a84d03af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80) no-repeat; */
          /* background: url({{image}}) no-repeat; */
+        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center; 
         width: 100%;
         height: 60vh;
+        display: flex;
     }
 
     /* .card-header img {
@@ -90,6 +81,12 @@ export default {
     .left-block {
         background: #181818;
     }
+
+    .left-block p {
+        color: white;
+         font-size: 2.4vw;
+         padding: 20px;
+    }
 /* 
     .card-block {
         padding-left:0px;
@@ -97,6 +94,12 @@ export default {
 
     .card-body {
         padding: 0px;
+    }
+
+    .card-header h1 {
+        color: white;
+        font-size: 5vw;
+        align-self: flex-end;
     }
 
    
