@@ -2,6 +2,7 @@
     <div>
         <Navbar />
         <Jumbotron />
+        <Article />
 
         <main>
             <div class="container">
