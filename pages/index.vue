@@ -4,7 +4,8 @@
 
     <ul>
       <li v-for="article of articles" :key="article.id">
-          <a href="#" @click.prevent="openArticle(article)">{{article.headline}}</a>
+          <a href="postimees.ee/" @click.prevent="openArticle(article)">{{article.headline}}</a>
+          <p>{{article.articleLead[0].html}}</p>
           <!-- Article {{article}} -->
       </li>
     </ul>

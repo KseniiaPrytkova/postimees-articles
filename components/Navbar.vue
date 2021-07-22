@@ -93,7 +93,7 @@
     }
 
     p, .login a {
-        font-size:  1.3vw;
+        font-size:  1.5vw;
     }
 
     img {

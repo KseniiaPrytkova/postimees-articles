@@ -73,14 +73,50 @@ connect this module with the application; in `nuxt.config.js`:
   ],
 ```
 
-## Vuex - we want to store an array of articles not just in a component, each time loading them when we visit the page, but store them in state (in store/ folder)
-if we have an array there already - we will not request data from server
+## Vuex
+We want to store an array of articles not just in a component, each time loading them when we visit the page, but store them in state (in `store/ folder`).
+If we have an array there already - we will not request data from server.
+`store/articles.js`:
+``` vue 
+export const state = () => ({
+    articles: []
+})
 
-## Font:
-https://www.linkedin.com/pulse/changing-default-fonts-vuetifyjs-nuxtjs-jarek-lipski/?trk=related_artice_Changing%20Default%20Fonts%20in%20Vuetify.js%20and%20Nuxt.js_article-card_title
+// changes the state, mutations are objects
+export const mutations = {
+    setArticles(state, articles) {
+        state.articles = articles
+    }
+}
 
-took similar to `tabac sans bold` from google fonts: 
-https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles
+// here we will describe action that will load data from the server 
+export const actions = {
+    async fetch({commit}) {
+        const articles = await this.$axios.$get('https://services.postimees.ee/rest/v1/sections/81/editorsChoice/articles?limit=5')
+        commit('setArticles', articles)
+    }
+}
+
+// s - state
+export const getters = {
+    articles: s => s.articles
+}
+```
+
+## Change default font for the whole project:
+Took similar to `tabac sans bold` from google fonts: https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles
+
+`Select this style` -> right panel: `@import` and `CSS rules`
+
+in `layouts/default.vue`:
+``` vue
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arapey&family=Cinzel:wght@500&family=Cormorant+Garamond&family=Festive&family=Open+Sans:wght@300&display=swap');
+    html, body {
+        font-family: 'Arapey', serif;
+    }
+</style>
+```
 
 ## TODO:
 - ~~add navbar;~~ [**DONE** ];
@@ -92,3 +128,4 @@ https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles
 - use @ in paths (nuxt root folder pointer);
 - jumbotron - style round button on click; add path;
 - jumbotron - add date for mobile; format text for mobile;
+- find `tabac sans bold`
