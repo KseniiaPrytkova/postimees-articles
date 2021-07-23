@@ -1,11 +1,20 @@
 <template>
     <div class="jumbotron">
-        <p class="top-button">
-            <a class="btn " href="#" role="button">POSTIMEES PLUSS</a>
+        <p id="top-button-desctop">
+            <a class="btn" href="#" role="button">POSTIMEES PLUSS</a>
+        </p>
+
+        <p id="top-button-mob">
+            <a class="btn text-white" href="#" role="button">POSTIMEES PLUSS {{this.currentDate}}</a>
         </p>
 
         <div class="container text-center">
-            <p lh-lg class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod reiciendis hic, nam dignissimos molestias possimus!</p>
+            <p lh-lg class="text-white">Kauni aia leian kus soovida soove,
+                laia aia ja viinamäe,
+                alla majja saadab mind kuu öö poole,
+                sängi laia uinun ja näen kui`s me sõidame,
+                isaga draakonil
+            </p>
         </div>
 
         <p class="bottom-button">
@@ -16,6 +25,11 @@
 
 <script>
 export default {
+    data() {
+        return {
+            currentDate: new Date().toGMTString()
+        }
+    },
     methods: {
         jump() {
             const target = document.querySelector('.card')
@@ -30,11 +44,20 @@ export default {
         .text-center p {
             font-size: 7vw;
             text-align: left;
-            /* padding: 50px; */
+            padding: 40px 40px 40px 10px;
         }
 
         img.center {
             width: 20%;
+        }
+
+        #top-button-desctop {
+            display: none;
+        }
+
+        #top-button-mob .btn {
+            font-size: 20px;
+            padding: 40px 40px 40px 20px;
         }
     }
 
@@ -47,6 +70,10 @@ export default {
         img.center {
             width: 15%;
         }
+
+        #top-button-mob {
+            display: none;
+        }
     }
 
     @media (min-width: 768px) { 
@@ -57,6 +84,10 @@ export default {
         img.center {
             width: 8%;
         }
+
+        #top-button-mob {
+            display: none;
+        }
     }
 
     .jumbotron {
@@ -66,7 +97,7 @@ export default {
         height: 100vh;
     }
 
-    .top-button .btn {
+    #top-button-desctop .btn {
         background-color: #c5cacd;
         color: #08b1f2;
         opacity: 0.8;

@@ -126,14 +126,15 @@ in `layouts/default.vue`:
 - fix navbar - fix text size;
 - fix navbar - render repeating elements (social media icons) in for loop;
 - use @ in paths (nuxt root folder pointer);
-- jumbotron - style round button on click; add path;
+- jumbotron - style round button on click; add path;~~ [**DONE** ];
 - jumbotron - add data component for mobile; format text for mobile;
 - find `tabac sans bold`;
 - one code style - use bootstrap classes (`p-0` instead of `padding: 0`);
-- understand WHY ON EARTH 2 IMAGES DUBLICATES;
 - style elements like on layouts (padding, spacing etc);
 - delete `<p>` from string with article content;
 - apply different images for corresponding screen sizes;
-- add chess order;
+- add links to articles;
+- add chess order(like on template);
+- add custom date format;
 - write test cases;
 - deploy on herokuapp;

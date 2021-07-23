@@ -17,7 +17,7 @@
                 </li>
             </ul>
 
-            <p class="navbar-nav text-white ms-auto">Lorem ipsum dolor sit amet consectetur</p>
+            <p class="navbar-nav text-white ms-auto">Üle lainete isaga draakonil</p>
 
             <ul class="navbar-nav ms-auto text-white desktop-nav">
                 <li class="nav-item">
@@ -93,7 +93,7 @@
     }
 
     p, .login a {
-        font-size:  1.5vw;
+        font-size:  2vw;
     }
 
     img {
