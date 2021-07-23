@@ -7,6 +7,7 @@
         :image="article.thumbnail.sources.landscape.large"
         :content="formatArticleLeads[index]"
         :counter="index + 1"
+        :id="article.id"
       />
   </section>
 </template>
@@ -31,6 +32,7 @@ export default {
     formatArticleLeads() {
         const articleLeadFormatted = this.articles.map(article => {
           if (!article.articleLead || article.articleLead.length === 0)
+            // so default value of prop will be displayed
             return ;
 
           let lead = article.articleLead[0].html
@@ -44,4 +46,3 @@ export default {
   }
 }
 </script>
-

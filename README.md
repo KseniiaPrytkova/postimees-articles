@@ -131,7 +131,7 @@ in `layouts/default.vue`:
 - find `tabac sans bold`;
 - one code style - use bootstrap classes (`p-0` instead of `padding: 0`);
 - style elements like on layouts (padding, spacing etc);
-- delete `<p>` from string with article content;
+- delete `<p>` from string with article content;~~ [**DONE** ];
 - apply different images for corresponding screen sizes;
 - add links to articles;
 - add chess order(like on template);

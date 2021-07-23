@@ -1,7 +1,8 @@
 <template>
     <div class="card">
         <div class="card-header rounded-0"  :style="{ backgroundImage: `url('${image}')` }">
-            <h1>{{header}}</h1>
+            <!-- <h1>{{header}}</h1> -->
+            <a :href="'http://' + 'postimees.ee/' + id"><h1>{{header}}</h1></a>
         </div>
 
         <div class="card-body p-0">
@@ -46,6 +47,10 @@ export default {
             type: Number,
             default: 42
         },
+        id: {
+            type: Number,
+            default: 1000
+        },
     },
 };
 </script>
@@ -58,6 +63,7 @@ export default {
         width: 100%;
         height: 60vh;
         display: flex;
+        background-blend-mode: darken;
     }
 
     .card {
@@ -81,10 +87,14 @@ export default {
         font-size: 2.2vw;
     }
 
-    .card-header h1 {
+    .card-header a {
         color: white;
-        font-size: 5vw;
+        font-size: 8vw;
         align-self: flex-end;
+        padding-bottom: 1%;
+        width: 60%;
+        text-decoration: none;
+        text-shadow: 2px 2px black;
     }
 
     .circle {
