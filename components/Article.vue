@@ -7,21 +7,20 @@
 
         <div class="card-body p-0">
             <div class="row g-0">
-                <div class="col-7 left-block">
-                    <div class="card-block">
+                
+                <div class="col-7 text-white content-block">
                         <p>{{content}}</p>
-                    </div>
                 </div>
-                <div class="col-5 right-block p-0">
-                    <div class="container">
+
+                <div class="col-5 circle-block p-0">
                         <div class="circle">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="40" cy="40" r="12" style="stroke:white; stroke-width: 0.2; fill:none"/>
                                 <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="0.5vw" dy=".3em">{{counter}}</text>
                             </svg>
                         </div>
-                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -71,19 +70,31 @@ export default {
         height: 100vh;
     }
 
-    .right-block div{
+    .circle-block div{
         background: #00a5e5;
         width: 100%;
         height: 40vh; 
     }
-
-    .left-block {
-        background: #181818;
-        overflow: hidden;
+  
+    .card:nth-child(odd) .content-block {
+        order: 1;
     }
 
-    .left-block p {
-        color: white;
+    .card:nth-child(odd) .circle-block {
+        order: 2;
+    }  
+
+    .card:nth-child(even) .content-block {
+        order: 2;
+    }
+
+    .card:nth-child(even) .content-block {
+        order: 1;
+    }
+
+    .content-block {
+        background: #181818;
+        overflow: hidden;
         font-size: 2.2vw;
     }
 

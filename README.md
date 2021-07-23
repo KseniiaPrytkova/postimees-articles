@@ -133,10 +133,10 @@ in `layouts/default.vue`:
 - style elements like on layouts (padding, spacing etc);
 - delete `<p>` from string with article content;~~ [**DONE** ];
 - apply different images for corresponding screen sizes;
-- add links to articles;
-- add chess order(like on template);
+- add links to articles;~~ [**DONE** ];
+- add chess order(like on template);~~ [**DONE** ];
 - add custom date format;
 - add aditional icon on jumbotron when mobile;
-- darken pictures, if a light picture will come from the server text will not be visible;
+- darken pictures, if a light picture will come from the server text will not be visible;~~ [**DONE** ];
 - write test cases;
 - deploy on herokuapp;
