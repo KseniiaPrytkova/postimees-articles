@@ -127,7 +127,7 @@ in `layouts/default.vue`:
 - fix navbar - render repeating elements (social media icons) in for loop;
 - use @ in paths (nuxt root folder pointer);
 - jumbotron - style round button on click; add path;~~ [**DONE** ];
-- jumbotron - add data component for mobile; format text for mobile;
+- jumbotron - add data component for mobile; format text for mobile;~~ [**DONE** ];
 - find `tabac sans bold`;
 - one code style - use bootstrap classes (`p-0` instead of `padding: 0`);
 - style elements like on layouts (padding, spacing etc);
@@ -136,5 +136,7 @@ in `layouts/default.vue`:
 - add links to articles;
 - add chess order(like on template);
 - add custom date format;
+- add aditional icon on jumbotron when mobile;
+- darken pictures, if a light picture will come from the server text will not be visible;
 - write test cases;
 - deploy on herokuapp;

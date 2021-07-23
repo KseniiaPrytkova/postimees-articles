@@ -5,7 +5,7 @@
         :key="index"
         :header="article.headline"
         :image="article.thumbnail.sources.landscape.large"
-        :content="article.articleLead[0].html"
+        :content="formatArticleLeads[index]"
         :counter="index + 1"
       />
   </section>
@@ -23,13 +23,23 @@ export default {
   components: {
       Article
   },
-  data: () => ({
-    pageTitle: 'Articles'
-  }),
   computed: {
     articles() {
-      console.log(this.$store.getters['articles/articles'])
+        console.log(this.$store.getters['articles/articles'])
         return this.$store.getters['articles/articles']
+    },
+    formatArticleLeads() {
+        const articleLeadFormatted = this.articles.map(article => {
+          if (!article.articleLead || article.articleLead.length === 0)
+            return ;
+
+          let lead = article.articleLead[0].html
+          lead = lead.replace(/(<([^>]+)>)/ig, '')
+
+          return lead
+        })
+
+        return articleLeadFormatted
     }
   }
 }
