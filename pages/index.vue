@@ -8,6 +8,7 @@
         :header="article.headline"
         :image="article.thumbnail.sources.landscape.large"
         :content="article.articleLead[0].html"
+        :counter="index + 1"
       />
 <!-- </div> -->
   </section>

@@ -1,14 +1,11 @@
 <template>
-<!-- <div class="article"> -->
     <div class="card">
-
         <div class="card-header rounded-0"  :style="{ backgroundImage: `url('${image}')` }">
             <h1>{{header}}</h1>
         </div>
 
         <div class="card-body">
             <div class="row g-0">
-
                 <div class="col-7 left-block">
                     <div class="card-block">
                         <p>{{content}}</p>
@@ -16,15 +13,21 @@
                 </div>
 
                 <div class="col-5 right-block p-0">
-                    <!-- <div class="container right-block"></div> -->
-                    <div class="container" >fsf</div>
+                    <div class="container">
+                        <div class="circle">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+   
+                                <circle cx="40" cy="40" r="15" style="stroke:white; stroke-width: 0.2; fill:none"/>
+     
+                                <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="1vw" dy=".3em">{{counter}}</text>
+                            </svg>
+                        </div>
+                        
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-<!-- </div> -->
-
 </template>
 
 <script>
@@ -44,6 +47,10 @@ export default {
       type: String,
       default: "Here should be content of article"
     },
+    counter: {
+      type: Number,
+      default: 42
+    },
     
   },
 };
@@ -51,8 +58,6 @@ export default {
 
 <style scoped>
     .card-header {
-        /* background: url(https://images.unsplash.com/photo-1610850826190-8120a84d03af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80) no-repeat; */
-         /* background: url({{image}}) no-repeat; */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center; 
@@ -74,7 +79,7 @@ export default {
     .right-block div{
         background: #00a5e5;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
          
     }
 
@@ -87,10 +92,6 @@ export default {
          font-size: 2.4vw;
          padding: 20px;
     }
-/* 
-    .card-block {
-        padding-left:0px;
-    } */
 
     .card-body {
         padding: 0px;
@@ -101,6 +102,13 @@ export default {
         font-size: 5vw;
         align-self: flex-end;
     }
+
+.circle {
+ display: flex; 
+  align-items: center; 
+  /* justify-content: center;  */
+  
+}
 
    
 </style>
