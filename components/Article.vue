@@ -4,7 +4,7 @@
             <h1>{{header}}</h1>
         </div>
 
-        <div class="card-body">
+        <div class="card-body p-0">
             <div class="row g-0">
                 <div class="col-7 left-block">
                     <div class="card-block">
@@ -79,10 +79,6 @@ export default {
     .left-block p {
         color: white;
         font-size: 2.2vw;
-    }
-
-    .card-body {
-        padding: 0px;
     }
 
     .card-header h1 {

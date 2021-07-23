@@ -128,11 +128,12 @@ in `layouts/default.vue`:
 - use @ in paths (nuxt root folder pointer);
 - jumbotron - style round button on click; add path;
 - jumbotron - add data component for mobile; format text for mobile;
-- find `tabac sans bold`
-- one code style - use bootstrap classes (`p-0` instead of `padding: 0`)
-- understand WHY ON EARTH 1TH AND 2D IMAGES DUBLICATES
-- style elements like on layouts (padding, spacing etc)
-- delete `<p>` from string with article content
-- apply different images for corresponding screen sizes
-- write test cases
-- deploy on herokuapp
+- find `tabac sans bold`;
+- one code style - use bootstrap classes (`p-0` instead of `padding: 0`);
+- understand WHY ON EARTH 2 IMAGES DUBLICATES;
+- style elements like on layouts (padding, spacing etc);
+- delete `<p>` from string with article content;
+- apply different images for corresponding screen sizes;
+- add chess order;
+- write test cases;
+- deploy on herokuapp;
