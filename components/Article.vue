@@ -11,18 +11,14 @@
                         <p>{{content}}</p>
                     </div>
                 </div>
-
                 <div class="col-5 right-block p-0">
                     <div class="container">
                         <div class="circle">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-   
-                                <circle cx="40" cy="40" r="15" style="stroke:white; stroke-width: 0.2; fill:none"/>
-     
-                                <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="1vw" dy=".3em">{{counter}}</text>
+                                <circle cx="40" cy="40" r="12" style="stroke:white; stroke-width: 0.2; fill:none"/>
+                                <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="0.5vw" dy=".3em">{{counter}}</text>
                             </svg>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -32,27 +28,25 @@
 
 <script>
 export default {
-    //  props: ['headline', 'image'],
   name: 'params',
-  props: {
-    header: {
-      type: String,
-      default: "Here should be headline of article"
+    props: {
+        header: {
+            type: String,
+            default: "Here should be headline of article"
+        },
+        image: {
+            type: String,
+            default: "https://images.unsplash.com/photo-1593745821762-a5d0d1ae878e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+        },
+        content: {
+            type: String,
+            default: "Here should be content of article"
+        },
+        counter: {
+            type: Number,
+            default: 42
+        },
     },
-    image: {
-      type: String,
-      default: "https://images.unsplash.com/photo-1593745821762-a5d0d1ae878e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-    },
-    content: {
-      type: String,
-      default: "Here should be content of article"
-    },
-    counter: {
-      type: Number,
-      default: 42
-    },
-    
-  },
 };
 </script>
 
@@ -66,11 +60,6 @@ export default {
         display: flex;
     }
 
-    /* .card-header img {
-         background-repeat: no-repeat;
-         width: 100%;
-    } */
-
     .card {
         width: 100%;
         height: 100vh;
@@ -79,18 +68,17 @@ export default {
     .right-block div{
         background: #00a5e5;
         width: 100%;
-        height: 50vh;
-         
+        height: 40vh; 
     }
 
     .left-block {
         background: #181818;
+        overflow: hidden;
     }
 
     .left-block p {
         color: white;
-         font-size: 2.4vw;
-         padding: 20px;
+        font-size: 2.2vw;
     }
 
     .card-body {
@@ -103,12 +91,9 @@ export default {
         align-self: flex-end;
     }
 
-.circle {
- display: flex; 
-  align-items: center; 
-  /* justify-content: center;  */
-  
-}
-
-   
+    .circle {
+        display: flex; 
+        align-items: center; 
+        overflow: hidden;
+    }
 </style>

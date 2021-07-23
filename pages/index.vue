@@ -1,7 +1,5 @@
 <template>
   <section>
-    <!-- <h1>{{pageTitle}}</h1> -->
-<!-- <div> -->
       <Article
         v-for="(article, index) of articles"
         :key="index"
@@ -10,7 +8,6 @@
         :content="article.articleLead[0].html"
         :counter="index + 1"
       />
-<!-- </div> -->
   </section>
 </template>
 

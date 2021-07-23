@@ -19,7 +19,7 @@ export default {
     ]
   },
 
-  loading: { color: 'yellow' },
+  loading: { color: 'blue' },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
