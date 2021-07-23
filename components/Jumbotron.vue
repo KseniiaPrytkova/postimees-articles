@@ -9,12 +9,21 @@
         </div>
 
         <p class="bottom-button">
-            <a routerLink="/" class="nav-link" href="#">
-                <img src="../static/nooleke_2.png" class="center" alt="nooleke">
-            </a>
+            <img @click="jump" src="../static/nooleke_2.png" class="center" alt="nooleke">
         </p>
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        jump() {
+            const target = document.querySelector('.card')
+            target.scrollIntoView(true)
+        }
+    }
+}
+</script>
 
 <style scoped>
     @media (max-width: 576px) { 
@@ -70,5 +79,10 @@
         display: block;
         margin: 0 auto;
         /* width: 8%; */
+    }
+
+    .bottom-button img:hover {
+        cursor: pointer;
+        opacity: 0.5;
     }
 </style>
