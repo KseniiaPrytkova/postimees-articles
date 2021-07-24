@@ -1,4 +1,7 @@
 # postimees-articles
+![i-f-flag](static/mob.gif)
+
+![i-f-flag](static/desctop.gif)
 ## Build Setup
 ```bash
 # install dependencies
