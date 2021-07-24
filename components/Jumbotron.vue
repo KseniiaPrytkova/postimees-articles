@@ -49,7 +49,8 @@ export default {
             font-size: 4.7vh;
             font-weight: bold;
             text-align: left;
-            margin: 0px 40px 10px 10px;
+            line-height: 110%;
+            margin: 0% 5% 10% 2%;
         }
 
         img.center {
@@ -61,13 +62,13 @@ export default {
         }
 
         #top-button-mob .btn {
-            font-size: 3vh;
-            margin: 40px 40px 20px 10px;
+            font-size: 4vw;
+            margin: 10% 10% 5% 2%;
         }
 
         .comments-icon {
-            margin: 20px 0px 20px 20px;
-            font-size: 3vh;
+            margin: 10% 10% 10% 5%;
+            font-size: 2.5vh;
         }
 
         .comments-icon img {
@@ -77,12 +78,13 @@ export default {
 
     @media (min-width: 576px) and (max-width: 768px) { 
         .text-center p {
-            font-size: 5vw;
-            margin: 10px;
+            font-size: 6vh;
+            margin: 5%;
+            font-weight: bold;
         }
               
         img.center {
-            width: 15%;
+            width: 9%;
         }
 
         #top-button-mob {
@@ -96,11 +98,13 @@ export default {
 
     @media (min-width: 768px) { 
         .text-center p {
-            font-size: 4vw;
-            padding: 50px;
+            font-size: 6vh;
+            margin: 8%;
+            font-weight: bold;
+            line-height: 120%;
         }
         img.center {
-            width: 8%;
+            width: 9%;
         }
 
         #top-button-mob {
@@ -123,15 +127,13 @@ export default {
         background-color: #c5cacd;
         color: #08b1f2;
         opacity: 0.8;
-        margin-left: 20px;
-        margin-top: 20px;
-        font-size: 18px;
+        font-size: 14px;
+        margin: 1% 0% 0% 1%;
     }
 
     img.center {
         display: block;
         margin: 0 auto;
-        /* width: 8%; */
     }
 
     .bottom-button img:hover {

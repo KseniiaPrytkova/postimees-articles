@@ -136,8 +136,10 @@ in `layouts/default.vue`:
 - ~~add links to articles;~~ [**DONE** ];
 - ~~add chess order(like on template);~~ [**DONE** ];
 - add custom date format;
-- add aditional icon on jumbotron when mobile;
+- ~~add aditional icon on jumbotron when mobile;~~ [**DONE** ];
 - ~~darken pictures, if a light picture will come from the server text will not be visible;~~ [**DONE** ];
-- find out how to not dublicate circle svg
+- find out how to not dublicate circle svg;
+- change all pixels on conventional units;
+- pixel perfect;
 - write test cases;
 - deploy on herokuapp;
