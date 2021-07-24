@@ -17,6 +17,10 @@
             </p>
         </div>
 
+        <div class="comments-icon text-white">
+            32&#8192; <img src="../static/comments.png" alt="comments">
+        </div>
+
         <p class="bottom-button">
             <img @click="jump" src="../static/nooleke_2.png" class="center" alt="nooleke">
         </p>
@@ -42,13 +46,14 @@ export default {
 <style scoped>
     @media (max-width: 576px) { 
         .text-center p {
-            font-size: 7vw;
+            font-size: 4.7vh;
+            font-weight: bold;
             text-align: left;
-            padding: 40px 40px 40px 10px;
+            margin: 0px 40px 10px 10px;
         }
 
         img.center {
-            width: 20%;
+            width: 12vh;
         }
 
         #top-button-desctop {
@@ -56,15 +61,24 @@ export default {
         }
 
         #top-button-mob .btn {
-            font-size: 20px;
-            padding: 40px 40px 40px 20px;
+            font-size: 3vh;
+            margin: 40px 40px 20px 10px;
+        }
+
+        .comments-icon {
+            margin: 20px 0px 20px 20px;
+            font-size: 3vh;
+        }
+
+        .comments-icon img {
+            width: 4vh;
         }
     }
 
     @media (min-width: 576px) and (max-width: 768px) { 
         .text-center p {
             font-size: 5vw;
-            padding: 10px;
+            margin: 10px;
         }
               
         img.center {
@@ -72,6 +86,10 @@ export default {
         }
 
         #top-button-mob {
+            display: none;
+        }
+
+        .comments-icon {
             display: none;
         }
     }
@@ -86,6 +104,10 @@ export default {
         }
 
         #top-button-mob {
+            display: none;
+        }
+
+        .comments-icon {
             display: none;
         }
     }
