@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     articles() {
-        console.log(this.$store.getters['articles/articles'])
+        // console.log(this.$store.getters['articles/articles'])
         return this.$store.getters['articles/articles']
     },
     formatArticleLeads() {

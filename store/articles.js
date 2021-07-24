@@ -17,7 +17,6 @@ export const actions = {
     }
 }
 
-// s - state
 export const getters = {
-    articles: s => s.articles
+    articles: state => state.articles
 }

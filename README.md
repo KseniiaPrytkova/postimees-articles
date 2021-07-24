@@ -20,13 +20,13 @@ $ npm run generate
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 # Development
-## Set up project:
-- Create Nuxt.js project [here](https://github.com/nuxt/create-nuxt-app):
+## Set up project
+- [Create Nuxt.js project](https://github.com/nuxt/create-nuxt-app):
 ```
 $ npm init nuxt-app@latest <my-project>
 ```
 
-- Connect Bootstrap to the project [here](https://getbootstrap.com/docs/3.4/):
+- [Connect Bootstrap to the project](https://getbootstrap.com/docs/3.4/):
 ```
 $ npm i bootstrap
 ```
@@ -53,7 +53,7 @@ $ npm run dev
     </nav>
 </template>
 ```
-And connect it with the layout (default.vue):
+And connect it with the layout (`default.vue`):
 ``` vue
 <template>
     <div>
@@ -125,7 +125,7 @@ export const getters = {
 ```
 
 ## Change default font for the whole project
-I took similar to `tabac sans bold` from google fonts: [here](https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles):
+I took a font similar to `tabac sans bold` from google [fonts](https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles):
 
 `Select this style` -> right panel: `@import` and `CSS rules`
 
