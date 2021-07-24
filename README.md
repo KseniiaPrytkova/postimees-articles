@@ -138,5 +138,6 @@ in `layouts/default.vue`:
 - add custom date format;
 - add aditional icon on jumbotron when mobile;
 - ~~darken pictures, if a light picture will come from the server text will not be visible;~~ [**DONE** ];
+- find out how to not dublicate circle svg
 - write test cases;
 - deploy on herokuapp;

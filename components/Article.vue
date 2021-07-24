@@ -1,9 +1,7 @@
 <template>
     <div class="card">
         <div class="card-header rounded-0"  :style="{ backgroundImage: `url('${image}')` }">
-            <!-- <h1>{{header}}</h1> -->
-            <!-- <div class="circle-top"> -->
-            <!-- </div> -->
+
         <div id="top-counter">
              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
                 <circle 
@@ -16,7 +14,6 @@
                 </text>
             </svg>
         </div>
-
             <a :href="'http://' + 'postimees.ee/' + id"><h1>{{header}}</h1></a>
         </div>
 
@@ -81,74 +78,52 @@ export default {
             display: none;
         }
 
+        .card-header {
+            position: relative;
+        }
+
         .content-block {
             width: 100%;
             height: 40vh;
         }
 
         #top-counter {
-            color: white;
+            position: absolute;
+            z-index: 9;
             width: 100px;
             height: 100px;
-            /* border: 1px solid white; */
-            /* display: flex; */
             margin-left: -16px;
             margin-top: -8px;
             background: #00a5e5;
-
         }
 
-        /* .card {
-            position: relative;
-        } */
+        .card-header h1 {
+            font-weight: bold;
+            font-size: 5vh;
+        }
 
-
-
-        /* .circle-top {
-            position: absolute; 
-            z-index: 9;
-            margin-top: -60vh;
-
-        } */
-
-        /* .circle-block { */ 
-            /* position: absolute; */
-            /* margin-top: -60vh; */
-            /* width:15%;
-            height: 10%; */
-            /* z-index: 9; */
-            /* overflow: hidden; */
-        /* }
-
-        /* .circle {
-                /* display: flex;  */
-                /* position: absolute;
-                margin-top: -58vh;
-                overflow: hidden;
-            height: 10%;
-            width:15%;
-
-        } */ 
-
-        /* .card-header a {
-            width: 100%;
-        } */
-
-        /* .content-block p {
-            font-size: 20px;
-        } */
-
+        .content-block p {
+            font-size: 3vh; 
+        }
     }
 
     @media (min-width: 576px) and (max-width: 768px) { 
         #top-counter {
             display: none;
         }
+
+        .card-header a {
+            width: 60%;
+        }
     }
 
     @media (min-width: 768px) { 
          #top-counter {
             display: none;
+        }
+
+        .card-header a {
+            width: 60%;
         }
     }
 
@@ -173,6 +148,34 @@ export default {
         height: 40vh; 
     }
   
+    .content-block {
+        background: #181818;
+        overflow: hidden;
+    }
+
+    .content-block p {
+        padding-top: 4vh;
+        padding-left: 5vw;
+        padding-right: 4vw;
+    }
+
+    .card-header a {
+        color: white;
+        /* font-size: 6.8vh; */
+        /* font-weight: bold; */
+        align-self: flex-end;
+        padding-bottom: 1%;
+        /* width: 60%; */
+        text-decoration: none;
+        text-shadow: 2px 2px black;
+    }
+
+    .circle {
+        display: flex; 
+        align-items: center; 
+        overflow: hidden;
+    }
+
     .card:nth-child(odd) .content-block {
         order: 1;
     }
@@ -187,34 +190,5 @@ export default {
 
     .card:nth-child(even) .content-block {
         order: 1;
-    }
-
-    .content-block {
-        background: #181818;
-        overflow: hidden;
-    }
-
-    .content-block p {
-        font-size: 3.3vh;
-        padding-top: 4vh;
-        padding-left: 5vw;
-        padding-right: 4vw;
-    }
-
-    .card-header a {
-        color: white;
-        /* font-size: 6.8vh; */
-        font-weight: bold;
-        align-self: flex-end;
-        padding-bottom: 1%;
-        width: 60%;
-        text-decoration: none;
-        text-shadow: 2px 2px black;
-    }
-
-    .circle {
-        display: flex; 
-        align-items: center; 
-        overflow: hidden;
     }
 </style>
