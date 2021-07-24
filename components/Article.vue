@@ -2,6 +2,21 @@
     <div class="card">
         <div class="card-header rounded-0"  :style="{ backgroundImage: `url('${image}')` }">
             <!-- <h1>{{header}}</h1> -->
+            <!-- <div class="circle-top"> -->
+            <!-- </div> -->
+        <div id="top-counter">
+             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <circle 
+                    cx="40" cy="40" r="25" 
+                    style="stroke:#8ad3f3; stroke-width: 2; fill:none"
+                />
+                <text
+                    x="50%" y="50%" text-anchor="middle"
+                    fill="white" font-size="3vw" dy=".3em">{{counter}}
+                </text>
+            </svg>
+        </div>
+
             <a :href="'http://' + 'postimees.ee/' + id"><h1>{{header}}</h1></a>
         </div>
 
@@ -12,11 +27,17 @@
                         <p>{{content}}</p>
                 </div>
 
-                <div class="col-5 circle-block p-0">
+                <div class="col-5 p-0 circle-block">
                         <div class="circle">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40" r="12" style="stroke:white; stroke-width: 0.2; fill:none"/>
-                                <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="0.5vw" dy=".3em">{{counter}}</text>
+                                <circle
+                                    cx="40" cy="40" r="12" 
+                                    style="stroke:#8ad3f3; stroke-width: 0.2; fill:none"
+                                />
+                                <text
+                                    x="50%" y="50%" text-anchor="middle"
+                                    fill="white" font-size="0.5vw" dy=".3em">{{counter}}
+                                </text>
                             </svg>
                         </div>
                 </div>
@@ -55,6 +76,82 @@ export default {
 </script>
 
 <style scoped>
+    @media (max-width: 576px) { 
+        .circle-block {
+            display: none;
+        }
+
+        .content-block {
+            width: 100%;
+            height: 40vh;
+        }
+
+        #top-counter {
+            color: white;
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid white; */
+            /* display: flex; */
+            margin-left: -16px;
+            margin-top: -8px;
+            background: #00a5e5;
+
+        }
+
+        /* .card {
+            position: relative;
+        } */
+
+
+
+        /* .circle-top {
+            position: absolute; 
+            z-index: 9;
+            margin-top: -60vh;
+
+        } */
+
+        /* .circle-block { */ 
+            /* position: absolute; */
+            /* margin-top: -60vh; */
+            /* width:15%;
+            height: 10%; */
+            /* z-index: 9; */
+            /* overflow: hidden; */
+        /* }
+
+        /* .circle {
+                /* display: flex;  */
+                /* position: absolute;
+                margin-top: -58vh;
+                overflow: hidden;
+            height: 10%;
+            width:15%;
+
+        } */ 
+
+        /* .card-header a {
+            width: 100%;
+        } */
+
+        /* .content-block p {
+            font-size: 20px;
+        } */
+
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) { 
+        #top-counter {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) { 
+         #top-counter {
+            display: none;
+        }
+    }
+
     .card-header {
         background-repeat: no-repeat;
         background-size: cover;
@@ -95,12 +192,19 @@ export default {
     .content-block {
         background: #181818;
         overflow: hidden;
-        font-size: 2.2vw;
+    }
+
+    .content-block p {
+        font-size: 3.3vh;
+        padding-top: 4vh;
+        padding-left: 5vw;
+        padding-right: 4vw;
     }
 
     .card-header a {
         color: white;
-        font-size: 8vw;
+        /* font-size: 6.8vh; */
+        font-weight: bold;
         align-self: flex-end;
         padding-bottom: 1%;
         width: 60%;
