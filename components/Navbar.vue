@@ -75,11 +75,19 @@
         .mob-nav, p {
             display: none;
         }
+
+        .login a {
+            font-size: 2.8vw;
+        }
     }
 
     @media (min-width: 768px) { 
         .mob-nav {
             display: none;
+        }
+
+        .login a {
+            font-size: 2vh;
         }
     }
 
@@ -94,10 +102,6 @@
 
     p {
         font-size: 2vw;
-    }
-
-    .login a {
-        font-size: 1.2vw;
     }
 
     img {

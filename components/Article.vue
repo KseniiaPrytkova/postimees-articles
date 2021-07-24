@@ -117,12 +117,12 @@ export default {
         }
 
         .card-header a h1 {
-            font-size: 7vh;
+            font-size: 6vh;
             font-weight: bold;
         }
 
         .content-block p {
-            font-size: 4vh;
+            font-size: 2.8vh;
             line-height: 120%;
         }
 

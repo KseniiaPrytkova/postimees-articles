@@ -1,5 +1,22 @@
 # postimees-articles
+## Build Setup
+```bash
+# install dependencies
+$ npm install
 
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+# development
 ## Set up project:
 - create Nuxt.js project (https://github.com/nuxt/create-nuxt-app):
 ```
@@ -122,8 +139,6 @@ in `layouts/default.vue`:
 - ~~add navbar;~~ [**DONE** ];
 - ~~add data loading from server(endpoint);~~ [**DONE** ];
 - fix navbar - move social media icons closer;
-- fix navbar - choose a font;
-- fix navbar - fix text size;
 - fix navbar - render repeating elements (social media icons) in for loop;
 - use @ in paths (nuxt root folder pointer);
 - ~~jumbotron - style round button on click; add path;~~ [**DONE** ];
@@ -135,7 +150,7 @@ in `layouts/default.vue`:
 - apply different images for corresponding screen sizes;
 - ~~add links to articles;~~ [**DONE** ];
 - ~~add chess order(like on template);~~ [**DONE** ];
-- add custom date format;
+- ~~add custom date format;~~ [**DONE** ];
 - ~~add aditional icon on jumbotron when mobile;~~ [**DONE** ];
 - ~~darken pictures, if a light picture will come from the server text will not be visible;~~ [**DONE** ];
 - find out how to not dublicate circle svg;
