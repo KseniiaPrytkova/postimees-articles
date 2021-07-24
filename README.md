@@ -2,7 +2,7 @@
 ![i-f-flag](static/mob.gif)
 
 ![i-f-flag](static/desctop.gif)
-## Build Setup
+## Build setup
 ```bash
 # install dependencies
 $ npm install
@@ -19,29 +19,29 @@ $ npm run generate
 ```
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-# development
+# Development
 ## Set up project:
-- create Nuxt.js project (https://github.com/nuxt/create-nuxt-app):
+- Create Nuxt.js project [here](https://github.com/nuxt/create-nuxt-app):
 ```
 $ npm init nuxt-app@latest <my-project>
 ```
 
-- connect Bootstrap to the project (https://getbootstrap.com/docs/3.4/):
+- Connect Bootstrap to the project [here](https://getbootstrap.com/docs/3.4/):
 ```
 $ npm i bootstrap
 ```
-and in `nuxt.config.js`:
+And in `nuxt.config.js`:
 ```
   css: [
     '@/node_modules/bootstrap/dist/css/bootstrap.min.css'
   ],
 ```
-build:
+Build:
 ```
 $ npm run dev
 ```
 
-- add first component (Navbar):
+- Add first component (Navbar):
 `cd components` ---> `touch Navbar.vue`
 ``` vue
 <template>
@@ -53,7 +53,7 @@ $ npm run dev
     </nav>
 </template>
 ```
-and connect it with layout (default.vue):
+And connect it with the layout (default.vue):
 ``` vue
 <template>
     <div>
@@ -77,16 +77,16 @@ export default {
 </script>
 ```
 
-## Modules:
-https://github.com/nuxt-community/awesome-nuxt (here are modules we can use)
+## Modules
+[awesome-nuxt](https://github.com/nuxt-community/awesome-nuxt) are modules we can use:
 
-- axios (https://axios.nuxtjs.org/setup)
+- [axios](https://axios.nuxtjs.org/setup)
 module providing the ability to work with asynchronous AJAX requests in promises mode; `$axios` - system variable
 
 ```
 $ npm install @nuxtjs/axios
 ```
-connect this module with the application; in `nuxt.config.js`:
+- connect this module with the application; in `nuxt.config.js`:
 ```
   modules: [
     '@nuxtjs/axios'
@@ -94,10 +94,11 @@ connect this module with the application; in `nuxt.config.js`:
 ```
 
 ## Vuex
-We want to store an array of articles not just in a component, each time loading them when we visit the page, but store them in state (in `store/ folder`).
-If we have an array there already - we will not request data from server.
+We want to store an array of articles not just in a component, each time loading them when we visit the page, but store them in a state (in `store/ directory`).
+If we have an array there already, we will not request data from server.
+
 `store/articles.js`:
-``` vue 
+``` js
 export const state = () => ({
     articles: []
 })
@@ -123,8 +124,8 @@ export const getters = {
 }
 ```
 
-## Change default font for the whole project:
-Took similar to `tabac sans bold` from google fonts: https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles
+## Change default font for the whole project
+I took similar to `tabac sans bold` from google fonts: [here](https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles):
 
 `Select this style` -> right panel: `@import` and `CSS rules`
 
