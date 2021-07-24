@@ -92,8 +92,12 @@
         background-color: #00a5e5;
     }
 
-    p, .login a {
-        font-size:  2vw;
+    p {
+        font-size: 2vw;
+    }
+
+    .login a {
+        font-size: 1.2vw;
     }
 
     img {

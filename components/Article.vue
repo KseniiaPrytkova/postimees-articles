@@ -28,12 +28,12 @@
                         <div class="circle">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
                                 <circle
-                                    cx="40" cy="40" r="12" 
-                                    style="stroke:#8ad3f3; stroke-width: 0.2; fill:none"
+                                    cx="40" cy="40" r="16" 
+                                    style="stroke:#8ad3f3; stroke-width: 1; fill:none"
                                 />
                                 <text
                                     x="50%" y="50%" text-anchor="middle"
-                                    fill="white" font-size="0.5vw" dy=".3em">{{counter}}
+                                    fill="white" font-size="0.9vw" dy=".3em">{{counter}}
                                 </text>
                             </svg>
                         </div>
@@ -115,6 +115,21 @@ export default {
         .card-header a {
             width: 60%;
         }
+
+        .card-header a h1 {
+            font-size: 7vh;
+            font-weight: bold;
+        }
+
+        .content-block p {
+            font-size: 4vh;
+            line-height: 120%;
+        }
+
+        /* chess order for headers */
+        .card:nth-child(even) .card-header a {
+            margin-left: 40vw;
+        }
     }
 
     @media (min-width: 768px) { 
@@ -125,6 +140,21 @@ export default {
         .card-header a {
             width: 60%;
         }
+
+        .card-header a h1 {
+            font-size: 6vh;
+            font-weight: bold;
+        }
+
+        .content-block p {
+            font-size: 2.7vh;
+            line-height: 120%;
+        }
+
+        /* chess order for headers */
+        .card:nth-child(even) .card-header a {
+            margin-left: 40vw;
+        }
     }
 
     .card-header {
@@ -134,18 +164,16 @@ export default {
         width: 100%;
         height: 60vh;
         display: flex;
-        background-blend-mode: darken;
+        /* background-blend-mode: darken; */
+        background-image: -moz-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
+        opacity: 0.902;
     }
 
     .card {
         width: 100%;
         height: 100vh;
-    }
-
-    .circle-block div{
-        background: #00a5e5;
-        width: 100%;
-        height: 40vh; 
     }
   
     .content-block {
@@ -161,13 +189,17 @@ export default {
 
     .card-header a {
         color: white;
-        /* font-size: 6.8vh; */
-        /* font-weight: bold; */
         align-self: flex-end;
         padding-bottom: 1%;
-        /* width: 60%; */
+        margin-left: 20px;
         text-decoration: none;
         text-shadow: 2px 2px black;
+    }
+
+    .circle-block div{
+        background: #00a5e5;
+        width: 100%;
+        height: 40vh; 
     }
 
     .circle {
@@ -176,6 +208,7 @@ export default {
         overflow: hidden;
     }
 
+    /* chess order for content-block */
     .card:nth-child(odd) .content-block {
         order: 1;
     }

@@ -118,6 +118,10 @@ export default {
 
     .jumbotron {
         background: url(https://images.unsplash.com/photo-1600836080410-6e9e0941a40b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) no-repeat center;
+        background-image: -moz-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
+        opacity: 0.902;
         background-size: cover;
         min-width: 100%;
         height: 100vh;
