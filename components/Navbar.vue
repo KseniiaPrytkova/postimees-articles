@@ -2,7 +2,7 @@
         <nav class="navbar navbar-expand navbar-dark navbar-custom-color py-0">
             <ul class="navbar-nav text-white ">
                 <li class="nav-item menu">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="#" v-on:click.prevent>
                         <div class="menu-icon">
                             <div></div>
                             <div></div>
@@ -21,22 +21,22 @@
 
             <ul class="navbar-nav ms-auto text-white desktop-nav">
                 <li class="nav-item">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="#" v-on:click.prevent>
                         <img src="../static/Facebook.png" class="d-inline-block" alt="facebook">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="#" v-on:click.prevent>
                         <img src="../static/Twitter.png" class="d-inline-block" alt="twitter">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="#" v-on:click.prevent>
                         <img src="../static/Email.png" class="d-inline-block" alt="email">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="#" v-on:click.prevent>
                         <img src="../static/jutumull.png" class="d-inline-block" alt="jutumull">
                     </a>
                 </li>
@@ -44,19 +44,19 @@
                     <sup>88</sup>
                 </li>
                 <li class="nav-item login">
-                    <a routerLink="/" class="nav-link text-white" href="#">LOGI&#8192;SISSE</a>
+                    <a routerLink="/" class="nav-link text-white" href="#" v-on:click.prevent>LOGI&#8192;SISSE</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav ms-auto text-white mob-nav">
                 <li class="nav-item">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="#" v-on:click.prevent>
                         <img src="../static/share.png" class="d-inline-block" alt="share">
                         <p>8</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/" class="nav-link" href="#">
+                    <a routerLink="/" class="nav-link" href="#" v-on:click.prevent>
                         <img src="../static/avatar.png" class="d-inline-block" alt="avatar">
                     </a>
                 </li>

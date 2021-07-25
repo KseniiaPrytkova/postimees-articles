@@ -125,7 +125,7 @@ export const getters = {
 ```
 
 ## Change default font for the whole project
-I took a font similar to `tabac sans bold` from google [fonts](https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles):
+I took a font similar to ~~`tabac sans bold`~~ `Postimess logo` from google [fonts](https://fonts.google.com/specimen/Arapey?category=Serif#standard-styles):
 
 `Select this style` -> right panel: `@import` and `CSS rules`
 

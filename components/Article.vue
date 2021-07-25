@@ -10,7 +10,7 @@
                 />
                 <text
                     x="50%" y="50%" text-anchor="middle"
-                    fill="white" font-size="3vw" dy=".3em">{{counter}}
+                    fill="white" font-size="3.5vw" dy=".3em">{{counter}}
                 </text>
             </svg>
         </div>
@@ -122,7 +122,7 @@ export default {
         }
 
         .content-block p {
-            font-size: 2.8vh;
+            font-size: 3.5vh;
             line-height: 120%;
         }
 
@@ -169,11 +169,13 @@ export default {
         background-image: -webkit-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
         background-image: -ms-linear-gradient(0deg, rgb(0,0,0) 0%, rgba(0,0,0,0.18039) 100%);
         opacity: 0.902;
+        border: none;
     }
 
     .card {
         width: 100%;
         height: 100vh;
+        border: none;
     }
   
     .content-block {

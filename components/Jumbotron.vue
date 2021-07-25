@@ -1,11 +1,11 @@
 <template>
     <div class="jumbotron">
         <p id="top-button-desctop">
-            <a class="btn" href="#" role="button">POSTIMEES PLUSS</a>
+            <a class="btn" href="#" v-on:click.prevent role="button">POSTIMEES PLUSS</a>
         </p>
 
         <p id="top-button-mob">
-            <a class="btn bg-light text-secondary" href="#" role="button">POSTIMEES PLUSS {{formatCurrentData()}}</a>
+            <a class="btn bg-light text-secondary" href="#" v-on:click.prevent role="button">POSTIMEES PLUSS {{formatCurrentData()}}</a>
         </p>
 
         <div class="container text-center">
