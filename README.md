@@ -159,6 +159,7 @@ in `layouts/default.vue`:
 - ~~darken pictures, if a light picture will come from the server text will not be visible;~~ [**DONE** ];
 - find out how to not dublicate circle svg;
 - change all pixels on conventional units;
+- set up the limit of length for content string (number of characters); 
 - pixel perfect;
 - write test cases;
 - deploy on herokuapp;

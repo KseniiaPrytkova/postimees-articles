@@ -122,7 +122,7 @@ export default {
         }
 
         .content-block p {
-            font-size: 3.5vh;
+            font-size: 3.7vh;
             line-height: 120%;
         }
 
@@ -147,7 +147,7 @@ export default {
         }
 
         .content-block p {
-            font-size: 2.7vh;
+            font-size: 2.8vh;
             line-height: 120%;
         }
 
@@ -181,6 +181,7 @@ export default {
     .content-block {
         background: #181818;
         overflow: hidden;
+        height: 40vh; 
     }
 
     .content-block p {
